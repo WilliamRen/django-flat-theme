@@ -22,7 +22,8 @@
 
 
   /* Forms */
-  input:not([type="checkbox"], [type="radio"]), button, textarea {
+
+  input[type="submit"], button {
     -webkit-appearance: none;
     appearance: none;
   }
@@ -291,5 +292,63 @@
 
   td, th {
     font-size: 14px;
+  }
+
+
+  /* Login */
+
+  .login #container {
+    width: auto;
+    margin: 30px 15px;
+  }
+
+  .login #header {
+    padding: 15px;
+  }
+
+  .login #content {
+    padding: 15px;
+  }
+
+  .login .form-row {
+    padding: 0;
+  }
+
+  .login .form-row + .form-row {
+    margin-top: 15px;
+  }
+
+  .login .form-row label {
+    display: block;
+    margin: 0 0 5px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .login input {
+    margin: 0 !important;
+  }
+
+  .login .submit-row {
+    padding: 0;
+  }
+
+  .login .submit-row input {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .login br {
+    display: none;
+  }
+
+  .login #footer {
+    padding: 15px;
+  }
+
+  .login #footer:empty {
+    display: none;
   }
 }
