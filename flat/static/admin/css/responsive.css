@@ -1,0 +1,295 @@
+/* Breakpoints:
+   - Mobile (up to 767px)
+   - Tablet (up to 991px)
+*/
+
+@media (max-width: 767px) {
+  #container {
+    min-width: 0;
+  }
+
+  /* Typography */
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+
+  /* Forms */
+  input:not([type="checkbox"], [type="radio"]), button, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+
+  /* Header */
+
+  #header {
+    padding: 15px;
+    height: auto;
+    line-height: 1;
+  }
+
+  #branding {
+    float: none;
+  }
+
+  #branding h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  #user-tools {
+    float: none;
+    margin: 15px 0 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+
+  /* Dashboard */
+
+  .dashboard #content {
+    width: auto;
+  }
+
+  #content {
+    padding: 15px;
+  }
+
+  .colMS {
+    margin-right: 0;
+  }
+
+  #content-main {
+    float: none;
+  }
+
+  #content-related {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    padding-bottom: 2px;
+  }
+
+  #content-related .module h2 {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  #recent-actions-module {
+    margin-bottom: 0;
+  }
+
+
+  /* Change List */
+
+  div.breadcrumbs {
+    padding: 10px 15px;
+  }
+
+  .object-tools {
+    margin-top: 0;
+    margin-bottom: 15px;
+    float: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .object-tools li {
+    height: auto;
+    float: none;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  #changelist #toolbar {
+    padding: 10px;
+  }
+
+  #changelist-search div {
+    display: flex;
+  }
+
+  #changelist-search > * {
+    flex-grow: 1;
+  }
+
+  #changelist #toolbar form #searchbar {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  #changelist #toolbar form input[type="submit"] {
+    flex-shrink: 0;
+  }
+
+  #changelist .actions {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  #changelist .actions > * {
+    flex-grow: 1;
+  }
+
+  #changelist .actions label {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  #changelist .actions select {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  #changelist .actions span.action-counter {
+    display: none !important;
+  }
+
+
+  /* Filtered Change List */
+
+  .change-list .filtered .results,
+  .change-list .filtered .paginator,
+  .filtered #toolbar, .filtered div.xfull,
+  .filtered .actions {
+    margin-right: 0;
+  }
+
+  #changelist-filter {
+    position: static;
+    width: auto;
+    margin-bottom: 15px;
+  }
+
+
+  /* Change Form */
+
+  .form-row {
+    padding: 15px 0;
+  }
+
+  .aligned label {
+    display: block;
+    float: none;
+    width: auto;
+    padding: 0 0 10px;
+  }
+
+  .aligned label:not(.vCheckboxLabel):after {
+    display: none;
+  }
+
+  .aligned .form-row input,
+  .aligned .form-row select {
+    width: 100%;
+  }
+
+  .aligned .vCheckboxLabel + p.help {
+    margin-top: -5px;
+  }
+
+  form .aligned p.help,
+  form .aligned input + p.help,
+  form .aligned select + p.help,
+  form .aligned textarea + p.help {
+    margin: 0;
+    padding: 5px 0 0;
+  }
+
+  .selector {
+    width: auto;
+    float: none;
+    display: flex;
+  }
+
+  .selector select {
+    width: 100%;
+  }
+
+  .selector-available, .selector-chosen, .selector ul.selector-chooser {
+    float: none;
+    width: auto;
+    flex-grow: 1;
+  }
+
+  form .form-row p.datetime {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .datetime input, .form-row .datetime input.vDateField, .form-row .datetime input.vTimeField {
+    margin-left: 0;
+  }
+
+  .submit-row {
+    padding: 10px;
+    margin: 0 0 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submit-row > * {
+    flex-grow: 1;
+  }
+
+  .submit-row input, .submit-row a {
+    float: none;
+    margin: 0 0 10px !important;
+    text-align: center;
+  }
+
+  .submit-row p.deletelink-box {
+    float: none;
+    order: 4;
+  }
+
+  .submit-row p.deletelink-box a {
+    margin: 0 !important;
+  }
+
+  .related-widget-wrapper {
+    float: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .related-widget-wrapper > * {
+    flex-grow: 1;
+  }
+
+  .related-widget-wrapper > a {
+    margin-left: 10px !important;
+  }
+
+  .related-widget-wrapper > select {
+    margin-bottom: 0;
+  }
+
+
+  /* Forms */
+
+  .form-row input[type=text], .form-row input[type=password], .form-row input[type=email],
+  .form-row input[type=url], .form-row input[type=number], .form-row textarea, .form-row select, .form-row .vTextField {
+    box-sizing: border-box;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    width: auto !important;
+  }
+
+  td, th {
+    font-size: 14px;
+  }
+}
