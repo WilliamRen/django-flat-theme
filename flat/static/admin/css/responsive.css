@@ -32,7 +32,7 @@
   /* Header */
 
   #header {
-    padding: 15px;
+    padding: 10px;
     height: auto;
     line-height: 1;
   }
@@ -63,11 +63,11 @@
   }
 
   #content {
-    padding: 15px;
+    padding: 15px 10px;
   }
 
   .colMS {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
   #content-main {
@@ -88,6 +88,12 @@
 
   #recent-actions-module {
     margin-bottom: 0;
+  }
+
+  /* Module */
+
+  .dashboard .module table td a {
+    padding-right: 0;
   }
 
 
@@ -126,7 +132,7 @@
 
   #changelist #toolbar form #searchbar {
     width: 100%;
-    margin: 0 10px;
+    margin: 0 10px 0 5px;
   }
 
   #changelist #toolbar form input[type="submit"] {
@@ -135,7 +141,7 @@
 
   #changelist .actions {
     display: flex;
-    padding: 0 10px;
+    padding: 0;
     margin-bottom: 15px;
   }
 
@@ -164,7 +170,7 @@
   .change-list .filtered .paginator,
   .filtered #toolbar, .filtered div.xfull,
   .filtered .actions {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
   #changelist-filter {
@@ -226,15 +232,33 @@
 
   form .form-row p.datetime {
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 
   .datetime input, .form-row .datetime input.vDateField, .form-row .datetime input.vTimeField {
     margin-left: 0;
   }
 
+  .datetime > input {
+    width: 50% !important;
+    margin: 0 5px 5px 10px !important;
+  }
+
+  .datetime span {
+    font-size: 13px;
+  }
+
+  .aligned label + p:not(.help) {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .inline-group {
+    overflow: auto;
+  }
+
   .submit-row {
-    padding: 10px;
+    padding: 10px 10px 0;
     margin: 0 0 15px;
     text-align: left;
     display: flex;
@@ -256,10 +280,6 @@
     order: 4;
   }
 
-  .submit-row p.deletelink-box a {
-    margin: 0 !important;
-  }
-
   .related-widget-wrapper {
     float: none;
     display: flex;
@@ -278,20 +298,43 @@
     margin-bottom: 0;
   }
 
+  /* Paginator */
+
+  .paginator .this-page, .paginator a:link, .paginator a:visited {
+    padding: 4px 10px;
+  }
+
 
   /* Forms */
 
   .form-row input[type=text], .form-row input[type=password], .form-row input[type=email],
   .form-row input[type=url], .form-row input[type=number], .form-row textarea, .form-row select, .form-row .vTextField {
     box-sizing: border-box;
+    padding: 6px;
   }
 
   input[type="checkbox"], input[type="radio"] {
     width: auto !important;
   }
 
-  td, th {
+  textarea {
+    width: auto !important;
+    max-height: 120px;
+  }
+
+  th, td {
+    padding: 10px;
     font-size: 14px;
+  }
+
+  td .changelink, td .addlink {
+    font-size: 13px;
+  }
+
+  /* Popup */
+
+  .popup #content {
+    padding: 10px;
   }
 
 
